@@ -12,6 +12,7 @@ package dota;
 public class Mirana extends Hero{
 
     public Mirana(){
+        name = "Mirana";
         type = "Agility";
         skills.add("Starstorm");
         skills.add("Sacred Arrow");
@@ -33,4 +34,10 @@ public class Mirana extends Hero{
     public String getSkillAt(int index) {
         return skills.get(index);
     }
+    
+    @Override
+    public String getName(){
+        return name;
+    }
+    
 }

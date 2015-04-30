@@ -13,10 +13,12 @@ import java.util.List;
  * @author asi
  */
 abstract class Hero {
+    String name;
     String type;
     List<String> skills = new ArrayList();
     
     public abstract String attack(int atkIndex);
     public abstract String block(int atkIndex);
     public abstract String getSkillAt(int index);
+    public abstract String getName();
 }

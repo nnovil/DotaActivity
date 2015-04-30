@@ -12,6 +12,7 @@ package dota;
 public class Spectre extends Hero{
 
     public Spectre(){
+        name = "Spectre";
         type = "Agility";
         skills.add("Spectral Dagger");
         skills.add("Desolate");
@@ -33,5 +34,11 @@ public class Spectre extends Hero{
     public String getSkillAt(int index) {
         return skills.get(index);
     }
+    
+    @Override
+    public String getName(){
+        return name;
+    }
+    
     
 }

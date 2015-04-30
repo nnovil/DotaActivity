@@ -12,6 +12,7 @@ package dota;
 public class Lina extends Hero{
 
     public Lina(){
+        name = "Lina";
         type = "Intelligence";
         skills.add("Dragon Slave");
         skills.add("Light Strike Array");
@@ -32,6 +33,11 @@ public class Lina extends Hero{
     @Override
     public String getSkillAt(int index) {
         return skills.get(index);
+    }
+    
+    @Override
+    public String getName(){
+        return name;
     }
     
 }

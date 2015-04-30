@@ -12,6 +12,7 @@ package dota;
 public class Doom extends Hero {
 
     public Doom(){
+        name = "Doom";
         type = "Strength";
         skills.add("Devour");
         skills.add("Scorched Earth");
@@ -33,4 +34,10 @@ public class Doom extends Hero {
     public String getSkillAt(int index) {
         return skills.get(index);
     }
+    
+    @Override
+    public String getName(){
+        return name;
+    }
+    
 }

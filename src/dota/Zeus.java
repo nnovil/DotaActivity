@@ -12,6 +12,7 @@ package dota;
 public class Zeus extends Hero {
     
     public Zeus(){
+        name = "Zeus";
         type = "Intelligence";
         skills.add("Arc Lightning");
         skills.add("Lightning Bolt");
@@ -33,4 +34,10 @@ public class Zeus extends Hero {
     public String getSkillAt(int index) {
         return skills.get(index);
     }
+    
+    @Override
+    public String getName(){
+        return name;
+    }
+    
 }
